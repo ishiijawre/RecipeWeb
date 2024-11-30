@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  background-image: linear-gradient(135deg, #bec5cf 0%, #f5f5f5 100%);
+}
+.navcontainer {
+  width: 100vw;
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    225deg,
+    #ff3cac 0%,
+    #784ba0 50%,
+    #2b86c5 100%
+  );
+
+  /* background-color: rgb(164, 164, 228); */
+
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  width: 100%;
+}
+#navlist {
+  width: 100%;
+  list-style: none;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: space-around;
+  /* margin-left: 15px;
+  margin-right: 15px; */
+  align-items: center;
+}
+
+#navlogo {
+  font-size: 2.5rem;
+  color: azure;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+#navitems {
+  width: 100%;
+  display: flex;
+  gap: 60px;
+}
+.footerbox {
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    225deg,
+    #ff3cac 0%,
+    #784ba0 50%,
+    #2b86c5 100%
+  );
+
+  width: 100%;
+  text-align: center;
+  min-height: 40px;
+}
+.footerbox p {
+  font-size: 2rem;
+  color: azure;
+}
+.contentbox {
+  box-shadow: 0px 0px 50px black;
+  padding: 3rem;
+  width: 70%;
+  margin: auto;
+
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.rightbox {
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s linear 0s;
+  box-shadow: 1px 1px 10px black;
+}
+
+.rightbox img {
+  display: block;
+  height: 400px;
+  border-radius: 20px;
+  transition: all 0.6s linear 0s;
+}
+.rightbox:hover {
+  border-radius: 20px;
+  transform: scale(1.1);
+}
+.leftbox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.leftbox h2 {
+  font-size: 2rem;
+}
+.ingredientsbox {
+  font-size: 1.1rem;
+}
+.item h3 {
+  font-size: 1.8 rem;
+  line-height: 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.ingredientsbox {
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.recipebox {
+  font-size: 1.1rem;
+}
+.rightbox .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(67, 65, 65, 0.657);
+  display: flex;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.5 linear 0s;
+}
+.rightbox:hover .overlay {
+  opacity: 1;
+}
+
+.rightbox .overlay span {
+  color: rgb(252, 252, 252);
+  font-size: 1.2rem;
+}
